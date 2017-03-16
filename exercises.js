@@ -3,6 +3,14 @@
 //Do not change any of the function names
 
 function makeCat(name, age) {
+    var newObj = {
+        age: age,
+        name: name,
+        meow: function(){
+        return('Meow!');
+    }
+    };
+return(newObj);
   //create a new object with a name property with the value set to the name argument
   //add an age property to the object with the value set to the age argument
   //add a method called meow that returns the string 'Meow!'
@@ -10,28 +18,41 @@ function makeCat(name, age) {
 }
 
 function addProperty(object, property) {
+    object[property] = null;
+    return(object);
   //add the property to the object with a value of null
   //return the object
   //note: the property name is NOT 'property'.  The name is the value of the argument called property (a string)
 }
 
 function invokeMethod(object, method) {
+    object[method]();
   //method is a string that contains the name of a method on the object
   //invoke this method
   //nothing needs to be returned
 }
 
 function multiplyMysteryNumberByFive(mysteryNumberObject) {
+    return mysteryNumberObject.mysteryNumber * 5;
+    
   //mysteryNumberObject has a property called mysteryNumber
   //multiply the mysteryNumber property by 5 and return the product
 }
 
 function deleteProperty(object, property) {
+    delete object[property];
+    return object;
   //remove the property from the object
   //return the object
 }
 
 function newUser(name, email, password) {
+    var newObj = {
+        name: name,
+        email: email,
+        password: password
+    };
+return newObj;
   //create a new object with properties matching the arguments passed in.
   //return the new object
 }
