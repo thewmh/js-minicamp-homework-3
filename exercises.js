@@ -58,6 +58,9 @@ return newObj;
 }
 
 function hasEmail(user) {
+    var hasEmail = {
+        
+    }
   //return true if the user has a value for the property 'email'
   //otherwise return false
 }
